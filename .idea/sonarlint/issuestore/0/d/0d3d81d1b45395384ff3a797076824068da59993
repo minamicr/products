@@ -1,16 +1,0 @@
-
-^
-java:S1192"IDefine a constant instead of duplicating this literal "Borracha" 3 times.(×­Öc
-\
-java:S1192"FDefine a constant instead of duplicating this literal "Lapis" 3 times.(®º‚
-]
-java:S1192"GDefine a constant instead of duplicating this literal "Caneta" 3 times.(€İìß
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‰É”Éşÿÿÿÿ
-t
-java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Çğ¬áùÿÿÿÿ
-t
-java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Çğ¬áùÿÿÿÿ
-t
-java:S2293,"YReplace the type specification in this constructor call with the diamond operator ("<>").(Çğ¬áùÿÿÿÿ
-7
-java:S2111-"!Use "BigDecimal.valueOf" instead.(Çû—

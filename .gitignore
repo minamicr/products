@@ -3,5 +3,9 @@
 *.iml
 modules.xml
 .idea/misc.xml
+.idea/compiler.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/workspace.xml
 *.ipr
 .idea/sonarlint
