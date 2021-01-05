@@ -1,6 +1,6 @@
-package Service;
+package service;
 
-import Domain.ProductDto;
+import domain.ProductDto;
 import java.math.BigDecimal;
 import java.util.List;
 

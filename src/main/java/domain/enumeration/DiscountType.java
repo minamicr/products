@@ -1,7 +1,7 @@
-package Domain.Enumeration;
+package domain.enumeration;
 
 public enum DiscountType {
   STANDARD,
   SPECIAL,
-  NONE;
+  NONE
 }

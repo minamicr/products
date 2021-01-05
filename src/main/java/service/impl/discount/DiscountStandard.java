@@ -1,12 +1,11 @@
-package Service.Impl.Discount;
+package service.impl.discount;
 
-import Service.IDiscount;
+import service.IDiscount;
 import java.math.BigDecimal;
 
 public class DiscountStandard implements IDiscount {
 
   DiscountStandard() {
-    System.out.println("Using PriceTableStandard");
   }
 
   public BigDecimal calculateDiscount(BigDecimal preco) {

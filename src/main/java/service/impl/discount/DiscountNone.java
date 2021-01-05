@@ -1,12 +1,11 @@
-package Service.Impl.Discount;
+package service.impl.discount;
 
-import Service.IDiscount;
+import service.IDiscount;
 import java.math.BigDecimal;
 
 public class DiscountNone implements IDiscount {
 
   DiscountNone() {
-    System.out.println("Using None");
   }
 
   @Override

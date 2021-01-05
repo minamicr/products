@@ -1,6 +1,6 @@
-package Domain;
+package domain;
 
-import Domain.Enumeration.DiscountType;
+import domain.enumeration.DiscountType;
 import java.math.BigDecimal;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

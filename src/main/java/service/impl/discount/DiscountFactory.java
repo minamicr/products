@@ -1,12 +1,15 @@
-package Service.Impl.Discount;
+package service.impl.discount;
 
-import Domain.Enumeration.DiscountType;
-import Service.IDiscount;
+import domain.enumeration.DiscountType;
+import service.IDiscount;
 
 public class DiscountFactory {
 
-  public IDiscount getDiscount (DiscountType discountType){
-    IDiscount discount = null;
+  private DiscountFactory() {
+  }
+
+  public static IDiscount getDiscount (DiscountType discountType){
+    IDiscount discount;
 
     switch (discountType) {
       case STANDARD:
@@ -18,6 +21,8 @@ public class DiscountFactory {
       case NONE:
         discount = new DiscountNone();
         break;
+      default:
+        discount = new DiscountNone();
     }
 
     return discount;

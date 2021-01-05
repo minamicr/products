@@ -1,9 +1,7 @@
-package Service.Impl;
+package service.impl;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-import Domain.Enumeration.DiscountType;
-import Domain.ProductDto;
+import domain.enumeration.DiscountType;
+import domain.ProductDto;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
@@ -14,7 +12,7 @@ class CouponTest {
 
   @Test
   void givenProductListWhenCalculateCouponTotalThenReturnValidTotal () {
-    List<ProductDto> products = new ArrayList<ProductDto>();
+    List<ProductDto> products = new ArrayList<>();
     products.add(new ProductDto("Lapis", new BigDecimal("2.00"), "", DiscountType.SPECIAL));
     products.add(new ProductDto("Caneta", new BigDecimal("2.00"), "", DiscountType.STANDARD));
     products.add(new ProductDto("Borracha", new BigDecimal("2.00"), "", DiscountType.NONE));
@@ -27,7 +25,7 @@ class CouponTest {
 
   @Test
   void givenProductListWithNullPriceWhenCalculateCouponTotalThenReturnValidTotal() {
-    List<ProductDto> products = new ArrayList<ProductDto>();
+    List<ProductDto> products = new ArrayList<>();
     products.add(new ProductDto("Lapis", null, "", DiscountType.SPECIAL));
     products.add(new ProductDto("Caneta", new BigDecimal("2.00"), "", DiscountType.STANDARD));
     products.add(new ProductDto("Borracha", new BigDecimal("2.00"), "", DiscountType.NONE));
@@ -41,8 +39,8 @@ class CouponTest {
 
   @Test
   void givenProductListWithoutDiscountWhenCalculateCouponTotalThenReturnValidTotal(){
-    List<ProductDto> products = new ArrayList<ProductDto>();
-    products.add(new ProductDto("Lapis", new BigDecimal(2.00), "", null));
+    List<ProductDto> products = new ArrayList<>();
+    products.add(new ProductDto("Lapis", new BigDecimal("2.00"), "", null));
     products.add(new ProductDto("Caneta", new BigDecimal("2.00"), "", DiscountType.STANDARD));
     products.add(new ProductDto("Borracha", new BigDecimal("2.00"), "", DiscountType.NONE));
 

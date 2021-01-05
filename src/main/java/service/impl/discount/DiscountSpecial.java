@@ -1,12 +1,11 @@
-package Service.Impl.Discount;
+package service.impl.discount;
 
-import Service.IDiscount;
+import service.IDiscount;
 import java.math.BigDecimal;
 
 public class DiscountSpecial implements IDiscount {
 
   DiscountSpecial() {
-    System.out.println("Using PriceTableSpecial");
   }
 
   public BigDecimal calculateDiscount(BigDecimal preco) {
